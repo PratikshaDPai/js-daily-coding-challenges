@@ -105,7 +105,13 @@ addList(1,50,1.23) //=> 52.23
 addList(7,-12) //=> -5
 -----------------------------------------------------------------------------*/
 // Your solution for 04-addList here:
+function addList(...nums) {
+  return nums.reduce((sum, num) => {
+    return (sum += num);
+  }, 0);
+}
 
+console.log(addList(2, 3, 4, 5));
 /*-----------------------------------------------------------------------------
 Challenge: 05-computeRemainder
 
