@@ -110,8 +110,6 @@ function addList(...nums) {
     return (sum += num);
   }, 0);
 }
-
-console.log(addList(2, 3, 4, 5));
 /*-----------------------------------------------------------------------------
 Challenge: 05-computeRemainder
 
@@ -134,7 +132,10 @@ computeRemainder(4,0) //=> Infinity
 computeRemainder(10.5, 3) //=> 1.5
 -----------------------------------------------------------------------------*/
 // Your solution for 05-computeRemainder here:
-
+function computeRemainder(num1, num2) {
+  if (num2 === 0) return Infinity;
+  return num1 % num2;
+}
 /*-----------------------------------------------------------------------------
 Challenge: 06-range
 
